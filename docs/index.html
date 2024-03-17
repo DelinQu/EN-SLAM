@@ -3,28 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta
-    content="Dynalang leverages diverse types of language to solve tasks by using language to predict the future in a multimodal world model."
-    name="description" />
-  <meta content="Dynalang: Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction"
-    property="og:title" />
-  <meta
-    content="Dynalang leverages diverse types of language to solve tasks by using language to predict the future in a multimodal world model."
-    property="og:description" />
-  <meta content="https://dynalang.github.io/data/open_graph.png" property="og:image" />
-  <meta content="Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction"
-    property="twitter:title" />
-  <meta
-    content="Dynalang leverages diverse types of language to solve tasks by using language to predict the future in a multimodal world model."
-    property="twitter:description" />
-  <meta name="twitter:site" content="@realJessyLin" />
-  <meta name="twitter:creator" content="@realJessyLin" />
-  <meta content="https://dynalang.github.io/data/open_graph.png" property="twitter:image" />
   <meta property="og:type" content="website" />
   <meta content="summary_large_image" name="twitter:card" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
-  <title>Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction</title>
+  <title>Implicit Event-RGBD Neural SLAM</title>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z7HCWJNBC"></script>
   <script>
@@ -46,94 +29,95 @@
   <div class="section">
     <div class="container">
       <div class="title-row">
-        <h1 class="title">Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction<h1>
+        <h1 class="title">Implicit Event-RGBD Neural SLAM<h1>
       </div>
       <div class="row">
         <div class="author-col">
           <a href="https://delinqu.github.io/" target="_blank" class="author-text">
-            Delin Qu
+            Delin Qu<sup>1,2*</sup>
           </a>
         </div>
         <div class="author-col">
-          <a href="https://yizhenlao.github.io/" target="_blank" class="author-text">
-            Yizhen Lao
-          </a>
-        </div>
-        <div class="invisible"><br></div>
-        <div class="author-col">
-          <a href="https://scholar.google.com/citations?user=cw3EaAYAAAAJ&hl=zh-CN" target="_blank" class="author-text">
-            Zhigang Wang
+          <a href="https://github.com/NPU-YanChi" target="_blank" class="author-text">
+            Chi Yan<sup>2,5*</sup>
           </a>
         </div>
         <div class="author-col">
-          <a href="https://scholar.google.com/citations?user=dasL9V4AAAAJ&hl=zh-CN" target="_blank" class="author-text">
-            Dong Wang
+          <a href="#" target="_blank" class="author-text">
+            Dong Wang<sup>2</sup>
+            <span class="superscript"></span>
+          </a>
+        </div>
+        <div class="author-col">
+          <a href="#" target="_blank" class="author-text">
+            Jie Ying<sup>3</sup>
             <span class="superscript"></span>
           </a>
         </div>
       </div>
+
       <div class="row">
         <div class="author-col">
-          <a href="https://scholar.google.com/citations?hl=zh-CN&user=DQB0hqwAAAAJ" target="_blank" class="author-text">
-            Bin Zhao
+          <a href="#" target="_blank" class="author-text">
+            Qizhi Chen<sup>2</sup>
+          </a>
+        </div>
+        <div class="author-col">
+          <a href="#" target="_blank" class="author-text">
+            Yiting Zhang<sup>2</sup>
+          </a>
+        </div>
+        <div class="author-col">
+          <a href="https://www.danxurgb.net" target="_blank" class="author-text">
+            Dan Xu<sup>5</sup>
+          </a>
+        </div>
+        <div class="author-col">
+          <a href="#" target="_blank" class="author-text">
+            Bin Zhao<sup>2,4†</sup>
           </a>
         </div>
         <div class="author-col">
           <a href="https://scholar.google.com/citations?user=ahUibskAAAAJ&hl=zh-CN" target="_blank" class="author-text">
-            Xuelong Li
+            Xuelong Li<sup>2†</sup>
           </a>
         </div>
       </div>
-
     </div>
-    <p id="uc-berkeley">Fudan University, Shanghai AI Laboratory</h1>
-      <p id="uc-berkeley">Northwestern Polytechnical University, Hunan University</h1>
-
+    <p id="uc-berkeley"><sup>1</sup>Fudan University, &nbsp; <sup>2</sup>Shanghai AI Laboratory, &nbsp; <sup>3</sup>Shanghai Jiao Tong University</h1>
+    <p id="uc-berkeley"><sup>4</sup>Northwestern Polytechnical University, &nbsp; &nbsp; <sup>5</sup>Hong Kong University of Sciences and Technology</h1>
     <div class="row button-row">
-      <a class="link-button" href="https://arxiv.org/abs/2303.18125" target="_blank" class="link-block">Paper</a>
-      <a class="link-button" href="https://github.com/DelinQu/qrsc" class="link-block">Code</a>
-      <a class="link-button" href="https://www.youtube.com/watch?v=Or-yvKHUrZ0" class="link-block">YouTube</a>
+      <a class="link-button" href="https://arxiv.org/abs/2311.11013" target="_blank" class="link-block">Paper</a>
+      <a class="link-button" href="https://github.com/DelinQu/EN-SLAM" class="link-block">Code</a>
+      <a class="link-button" href="#" class="link-block">Dataset</a>
+      <a class="link-button" href="#" class="link-block">YouTube</a>
     </div>
     <p class="tldr">
-      <b>TL;DR</b>:
-      This paper addresses the problem of rolling shutter correction in complex nonlinear and dynamic scenes with
-      extreme occlusion.
+      <b>TL;DR: EN-SLAM</b>, the first event-RGBD implicit neural SLAM that leverages event stream and RGBD to overcome challenges in motion blur and lighting variation scenes; differentiable CRF rendering &rarr; shared radiance field &rarr; RGB+event data; consecutive difference constraints of the event stream &rarr; temporal aggregating.
     </p>
     <!-- <video id="main-video" muted autoplay controls playsinline loop>
       <source id="mp4" src="https://www.youtube.com/embed/Or-yvKHUrZ0" type="video/mp4">
     </video> -->
-    <iframe id="main-video" height="404.9" src="https://www.youtube.com/embed/Or-yvKHUrZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- <iframe id="main-video" height="404.9" src="https://www.youtube.com/embed/Or-yvKHUrZ0" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe> -->
 
     <div id="content">
       <h2 class="section-header">Overview</h2>
       <div class="paragraph">
         <p>
-          This paper addresses the problem of rolling shutter correction in complex nonlinear and dynamic scenes with
-          extreme occlusion. Existing methods suffer from two main drawbacks. Firstly, they face challenges in
-          estimating the accurate correction field due to the uniform velocity assumption, leading to significant image
-          correction errors under complex motion. Secondly, the drastic occlusion in dynamic scenes prevents current
-          solutions from achieving better image quality because of the inherent difficulties in aligning and aggregating
-          multiple frames. To tackle these challenges, we model the curvilinear trajectory of pixels analytically and
-          propose a geometry-based Quadratic Rolling Shutter (QRS) motion solver, which precisely estimates the
-          high-order correction field of individual pixels. Besides, to reconstruct high-quality occlusion frames in
-          dynamic scenes, we present a 3D video architecture that effectively Aligns and Aggregates multi-frame context,
-          namely, RSA2-Net. We evaluate our method across a broad range of cameras and video sequences, demonstrating
-          its significant superiority. Specifically, our method surpasses the state-of-the-art by +4.98, +0.77, and
-          +4.33 of PSNR on Carla-RS, Fastec-RS, and BS-RSC datasets, respectively.
+          Implicit neural SLAM has achieved remarkable progress recently. Nevertheless, existing methods face significant challenges in non-ideal scenarios, such as motion blur or lighting variation, which often leads to issues like convergence failures, localization drifts, and distorted mapping. To address these challenges, we propose EN-SLAM, the first event-RGBD implicit neural SLAM framework, which effectively leverages the high rate and high dynamic range advantages of event data for tracking and mapping. Specifically, EN-SLAM proposes a differentiable CRF (Camera Response Function) rendering technique to generate distinct RGB and event camera data via a shared radiance field, which is optimized by learning a unified implicit representation with the captured event and RGBD supervision. Moreover, based on the temporal difference property of events, we propose a temporal aggregating optimization strategy for the event joint tracking and global bundle adjustment, capitalizing on the consecutive difference constraints of events, significantly enhancing tracking accuracy and robustness. Finally, we construct the simulated dataset DEV-Indoors and real captured dataset DEV-Reals containing 6 scenes, 17 sequences with practical motion blur and lighting changes for evaluations. Experimental results show that our method outperforms the SOTA methods in both tracking ATE and mapping ACC with a real-time 17 FPS in various challenging environments.
         </p>
         <p><b>Contributions:</b></p>
         <ul>
-          <li>We analytically model the trajectory in complex non-linear movements and present a novel geometry-based
-            quadratic rolling shutter motion solver that precisely estimates the high-order correction field of
-            individual pixels.
-          <li>We propose a self-alignment 3D video architecture for high-quality frame aggregation and synthesis against
-            extreme scene occlusion.
-          <li>A broad range of evaluations demonstrates the significant superiority and generalization ability of our
-            proposed method over state-of-the-art methods.
+          <li> We present <b>EN-SLAM</b>, the first event-RGBD implicit neural SLAM framework that efficiently leverages event stream and RGBD to overcome challenges in extreme motion blur and lighting variation scenes.
+          <li> A differentiable CRF rendering technique is proposed to map a unified representation in the shared radiance field to RGB and event camera data for addressing the significant distinction between event and RGB. A temporal aggregating optimization strategy that capitalizes the consecutive difference constraints of the event stream is present and significantly improves the camera tracking accuracy and robustness.
+          <li>  We construct a simulated <b>DEV-Indoors</b> and real captured <b>DEV-Reals</b> dataset containing 17 sequences with practical motion blur and lighting changes. A wide range of evaluations demonstrate competitive real-time performance under various challenging environments.
         </ul>
       </div>
 
-      <h2 class="section-header">Motivation</h2>
+      <!-- <h2 class="section-header">Motivation</h2>
       <div class="img-container">
         <div class="paragraph">
           Existing methods suffer from two main drawbacks. Firstly, they face challenges in estimating the accurate
@@ -188,19 +172,19 @@
         <img class="wide-img" src="static/images/visual2.png" alt="motivation">
         <div class="paragraph">
         </div>
-      </div>
+      </div> -->
 
       <h2 class="section-header">Citation</h2>
       <div class="citation">
-        <pre id="codecell0">@InProceedings{Qu_2023_ICCV,
-            author    = {Qu, Delin and Lao, Yizhen and Wang, Zhigang and Wang, Dong and Zhao, Bin and Li, Xuelong},
-            title     = {Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction},
-            booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-            month     = {October},
-            year      = {2023},
-            pages     = {10680-10688}
-        }
-        </pre>
+        <pre id="codecell0">
+@inproceedings{
+    anonymous2024implicit,
+    title={Implicit Event-{RGBD} Neural {SLAM}},
+    author={Anonymous},
+    booktitle={Conference on Computer Vision and Pattern Recognition 2024},
+    year={2024},
+    url={https://openreview.net/forum?id=OjQP10Pgnp}
+  }</pre>
       </div>
       <br><br>
       <div class="paragraph-center">For more information, check out the paper, code, and YouTube video:</div>
@@ -209,7 +193,6 @@
         <a class="link-button" href="https://github.com/DelinQu/qrsc" class="link-block">Code</a>
         <a class="link-button" href="https://www.youtube.com/watch?v=Or-yvKHUrZ0" class="link-block">YouTube</a>
       </div>
-
     </div>
 
   </div>
