@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta
+    content="Dynalang leverages diverse types of language to solve tasks by using language to predict the future in a multimodal world model."
+    name="description" />
+  <meta content="Dynalang: Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction"
+    property="og:title" />
+  <meta
+    content="Dynalang leverages diverse types of language to solve tasks by using language to predict the future in a multimodal world model."
+    property="og:description" />
+  <meta content="https://dynalang.github.io/data/open_graph.png" property="og:image" />
+  <meta content="Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction"
+    property="twitter:title" />
+  <meta
+    content="Dynalang leverages diverse types of language to solve tasks by using language to predict the future in a multimodal world model."
+    property="twitter:description" />
+  <meta name="twitter:site" content="@realJessyLin" />
+  <meta name="twitter:creator" content="@realJessyLin" />
+  <meta content="https://dynalang.github.io/data/open_graph.png" property="twitter:image" />
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+  <title>Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z7HCWJNBC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9Z7HCWJNBC');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Source+Sans+3:wght@400;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Source+Sans+3:wght@400;700&display=swap">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="title-row">
+        <h1 class="title">Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction<h1>
+      </div>
+      <div class="row">
+        <div class="author-col">
+          <a href="https://delinqu.github.io/" target="_blank" class="author-text">
+            Delin Qu
+          </a>
+        </div>
+        <div class="author-col">
+          <a href="https://yizhenlao.github.io/" target="_blank" class="author-text">
+            Yizhen Lao
+          </a>
+        </div>
+        <div class="invisible"><br></div>
+        <div class="author-col">
+          <a href="https://scholar.google.com/citations?user=cw3EaAYAAAAJ&hl=zh-CN" target="_blank" class="author-text">
+            Zhigang Wang
+          </a>
+        </div>
+        <div class="author-col">
+          <a href="https://scholar.google.com/citations?user=dasL9V4AAAAJ&hl=zh-CN" target="_blank" class="author-text">
+            Dong Wang
+            <span class="superscript"></span>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="author-col">
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=DQB0hqwAAAAJ" target="_blank" class="author-text">
+            Bin Zhao
+          </a>
+        </div>
+        <div class="author-col">
+          <a href="https://scholar.google.com/citations?user=ahUibskAAAAJ&hl=zh-CN" target="_blank" class="author-text">
+            Xuelong Li
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <p id="uc-berkeley">Fudan University, Shanghai AI Laboratory</h1>
+      <p id="uc-berkeley">Northwestern Polytechnical University, Hunan University</h1>
+
+    <div class="row button-row">
+      <a class="link-button" href="https://arxiv.org/abs/2303.18125" target="_blank" class="link-block">Paper</a>
+      <a class="link-button" href="https://github.com/DelinQu/qrsc" class="link-block">Code</a>
+      <a class="link-button" href="https://www.youtube.com/watch?v=Or-yvKHUrZ0" class="link-block">YouTube</a>
+    </div>
+    <p class="tldr">
+      <b>TL;DR</b>:
+      This paper addresses the problem of rolling shutter correction in complex nonlinear and dynamic scenes with
+      extreme occlusion.
+    </p>
+    <!-- <video id="main-video" muted autoplay controls playsinline loop>
+      <source id="mp4" src="https://www.youtube.com/embed/Or-yvKHUrZ0" type="video/mp4">
+    </video> -->
+    <iframe id="main-video" height="404.9" src="https://www.youtube.com/embed/Or-yvKHUrZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <div id="content">
+      <h2 class="section-header">Overview</h2>
+      <div class="paragraph">
+        <p>
+          This paper addresses the problem of rolling shutter correction in complex nonlinear and dynamic scenes with
+          extreme occlusion. Existing methods suffer from two main drawbacks. Firstly, they face challenges in
+          estimating the accurate correction field due to the uniform velocity assumption, leading to significant image
+          correction errors under complex motion. Secondly, the drastic occlusion in dynamic scenes prevents current
+          solutions from achieving better image quality because of the inherent difficulties in aligning and aggregating
+          multiple frames. To tackle these challenges, we model the curvilinear trajectory of pixels analytically and
+          propose a geometry-based Quadratic Rolling Shutter (QRS) motion solver, which precisely estimates the
+          high-order correction field of individual pixels. Besides, to reconstruct high-quality occlusion frames in
+          dynamic scenes, we present a 3D video architecture that effectively Aligns and Aggregates multi-frame context,
+          namely, RSA2-Net. We evaluate our method across a broad range of cameras and video sequences, demonstrating
+          its significant superiority. Specifically, our method surpasses the state-of-the-art by +4.98, +0.77, and
+          +4.33 of PSNR on Carla-RS, Fastec-RS, and BS-RSC datasets, respectively.
+        </p>
+        <p><b>Contributions:</b></p>
+        <ul>
+          <li>We analytically model the trajectory in complex non-linear movements and present a novel geometry-based
+            quadratic rolling shutter motion solver that precisely estimates the high-order correction field of
+            individual pixels.
+          <li>We propose a self-alignment 3D video architecture for high-quality frame aggregation and synthesis against
+            extreme scene occlusion.
+          <li>A broad range of evaluations demonstrates the significant superiority and generalization ability of our
+            proposed method over state-of-the-art methods.
+        </ul>
+      </div>
+
+      <h2 class="section-header">Motivation</h2>
+      <div class="img-container">
+        <div class="paragraph">
+          Existing methods suffer from two main drawbacks. Firstly, they face challenges in estimating the accurate
+          correction field due to the uniform velocity assumption, leading to significant image correction errors under
+          complex motion. Secondly, the drastic occlusion in dynamic scenes prevents current solutions from achieving
+          better image quality because of the inherent difficulties in aligning and aggregating multiple frames
+        </div>
+        <img class="wide-img" src="static/images/motivation.png" alt="motivation">
+        <div class="paragraph">
+          To tackle these challenges, we model the curvilinear trajectory of pixels analytically and propose a
+          geometry-based Quadratic Rolling Shutter (QRS) motion solver, which precisely estimates the high-order
+          correction field of individual pixels. Besides, to reconstruct high-quality occlusion frames in dynamic
+          scenes, we present a 3D video architecture that effectively Aligns and Aggregates multi-frame context.
+        </div>
+      </div>
+
+      <h2 class="section-header">Overview</h2>
+      <div class="img-container">
+        <div class="paragraph">
+          Overview of the proposed method. We aim to estimate precise correction fields in nonlinear motion with the QRS
+          motion solver and synthesize high-quality frames against dynamic scenes with extreme occlusion by a
+          self-alignment 3D video architecture RSA2-Net.
+        </div>
+        <img class="wide-img" src="static/images/pipeline.png" alt="motivation">
+        <div class="paragraph">
+          The object moves at variable velocity and has a complex curvilinear trajectory. Note that the object has only
+          2 Dof in the image plane, and the time interval between frames is very small. Thus, we use a quadratic motion
+          model to formalize the curvilinear trajectory of the pixel.
+        </div>
+        <img class="wide-img" src="static/images/solver.png" alt="motivation">
+      </div>
+
+      <h2 class="section-header">Quantitative Analysis and Generalization Ability</h2>
+      <div class="img-container">
+        <div class="paragraph">
+          The results reported in table show that the proposed method outperforms the other eight RSC methods by large
+          margins on Carla-RS, Fascte-RS, BS-RSC and ACC datasets. These superior performances significantly demonstrate
+          the effectiveness of our model on highly dynamic scenes with occlusion and real-world curvilinear movements.
+          We performed cross-tests on three datasets the proposed method demonstrates strong generalization performance,
+          benefiting from the QRS motion solver.
+        </div>
+        <img class="wide-img" src="static/images/quantitative.png" alt="motivation">
+      </div>
+
+      <h2 class="section-header">Visual Comparisons</h2>
+      <div class="img-container">
+        <div class="paragraph">
+          Visual comparisons on Carla-RS, Fastec-RS, BS-RSC and ACC datasets. The proposed method can effectively
+          correct the rolling shutter distortion in complex nonlinear and dynamic scenes with extreme occlusion.
+        </div>
+        <img class="wide-img" src="static/images/visual1.png" alt="motivation">
+        <img class="wide-img" src="static/images/visual2.png" alt="motivation">
+        <div class="paragraph">
+        </div>
+      </div>
+
+      <h2 class="section-header">Citation</h2>
+      <div class="citation">
+        <pre id="codecell0">@InProceedings{Qu_2023_ICCV,
+            author    = {Qu, Delin and Lao, Yizhen and Wang, Zhigang and Wang, Dong and Zhao, Bin and Li, Xuelong},
+            title     = {Towards Nonlinear-Motion-Aware and Occlusion-Robust Rolling Shutter Correction},
+            booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+            month     = {October},
+            year      = {2023},
+            pages     = {10680-10688}
+        }
+        </pre>
+      </div>
+      <br><br>
+      <div class="paragraph-center">For more information, check out the paper, code, and YouTube video:</div>
+      <div class="row button-row">
+        <a class="link-button" href="https://arxiv.org/abs/2303.18125" target="_blank" class="link-block">Paper</a>
+        <a class="link-button" href="https://github.com/DelinQu/qrsc" class="link-block">Code</a>
+        <a class="link-button" href="https://www.youtube.com/watch?v=Or-yvKHUrZ0" class="link-block">YouTube</a>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
